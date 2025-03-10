@@ -10,7 +10,9 @@ const UserList = () => {
     const fetchUsers = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("https://jsonplaceholder.org/users");
+        const response = await axios.get(
+          "https://jsonplaceholder.typicode.com/users"
+        );
         setListOfUser(response.data);
 
         setLoading(false);
